@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dad.javafx.calendar.components.MonthComponent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="root" styleClass="root" stylesheets="@../css/calendar.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <left>
+            <Button fx:id="anteriorButton" mnemonicParsing="false" onAction="#onAnteriorAction" styleClass="changeButton" text="&lt;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Button fx:id="siguienteButton" mnemonicParsing="false" onAction="#onSiguienteAction" styleClass="changeButton" text="&gt;" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Label fx:id="yearLabel" styleClass="year" text="Year" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </top>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <center>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <MonthComponent fx:id="septiembre" monthProperty="9" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="mayo" monthProperty="5" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="enero" monthProperty="1" prefHeight="100.0" prefWidth="100.0">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="febrero" monthProperty="2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="marzo" monthProperty="3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="abril" monthProperty="4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="junio" monthProperty="6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="julio" monthProperty="7" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="agosto" monthProperty="8" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="octubre" monthProperty="10" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="noviembre" monthProperty="11" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+            <MonthComponent fx:id="diciembre" monthProperty="12" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin></MonthComponent>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
