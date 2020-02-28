@@ -1,13 +1,14 @@
 .root{
 	-fx-font-family	: "Courier New" ;
-	-fx-background-color: orange;
+	-fx-background-color: white;
 	-fx-font-size: 11pt;	
 }
 .button:hover{
-	-fx-effect:dropshadow(gaussian,black,10,0.1,2,2);
+	-fx-effect:dropshadow(gaussian,black,8,0.3,1,1);
 }
 .monthLabel{
-	-fx-font-size: 13pt;
+	-fx-font-family	: "Courier New" ;
+	-fx-font-size: 11pt;
 }
 .sunday{
 	-fx-text-fill:red;
@@ -17,14 +18,14 @@
 }
 .weekday{
 	-fx-font-weight: bold;
-	-fx-text-fill:white;
+	-fx-text-fill:black;
 }
 .year{
 	-fx-font-family: "Arial";
 	-fx-font-size: 22pt;
 	-fx-font-weight: bold;
 	-fx-text-fill:white;
-	-fx-effect:dropshadow(gaussian,black,5,0.1,2,2);
+	-fx-effect:dropshadow(gaussian,black,3,0.1,1,1);
 	
 }
 .month{
@@ -32,7 +33,7 @@
 	-fx-font-weight: bold;
 }
 .today{
-	-fx-background-color:linear-gradient(from 0% 0% to 0% 100%,white 0,orange 100);	
+	-fx-background-color:linear-gradient(from 0% 100% to 99% 100%,white 0,orange 10);	
 	-fx-background-radius:10px;
 	-fx-border-radius:10px;
 	-fx-border-style: dashed;

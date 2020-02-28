@@ -9,7 +9,7 @@
 
 <fx:root fx:id="root" styleClass="root" stylesheets="@../css/calendar.css" type="BorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <Label fx:id="monthLabel" styleClass="month" text="Month" BorderPane.alignment="CENTER" />
+      <Label fx:id="mesLabel" styleClass="month" text="Month" BorderPane.alignment="CENTER" />
    </top>
    <center>
       <GridPane BorderPane.alignment="CENTER">
@@ -39,68 +39,68 @@
             <Label styleClass="weekday" text="V" GridPane.columnIndex="4" />
             <Label styleClass="weekday" text="S" GridPane.columnIndex="5" />
             <Label styleClass="sunday" text="D" GridPane.columnIndex="6" />
-            <Label fx:id="acero" styleClass="day" GridPane.rowIndex="1" />
-            <Label fx:id="auno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="ados" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label fx:id="atres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label fx:id="acuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Label fx:id="acinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Label fx:id="aseis" GridPane.columnIndex="6" GridPane.rowIndex="1">
+            <Label fx:id="L_cero" styleClass="day" GridPane.rowIndex="1" />
+            <Label fx:id="M_cero" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="X_cero" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="J_cero" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="V_cero" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="S_cero" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="D_cero" GridPane.columnIndex="6" GridPane.rowIndex="1">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />
                </styleClass></Label>
-            <Label fx:id="bcero" styleClass="day" GridPane.rowIndex="2" />
-            <Label fx:id="buno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="bdos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label fx:id="btres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label fx:id="bcuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Label fx:id="bcinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Label fx:id="bseis" GridPane.columnIndex="6" GridPane.rowIndex="2">
+            <Label fx:id="L_uno" styleClass="day" GridPane.rowIndex="2" />
+            <Label fx:id="M_uno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="X_uno" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="J_uno" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="V_uno" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="S_uno" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label fx:id="D_uno" GridPane.columnIndex="6" GridPane.rowIndex="2">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />
                </styleClass></Label>
-            <Label fx:id="ccero" styleClass="day" GridPane.rowIndex="3" />
-            <Label fx:id="cuno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="cdos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label fx:id="ctres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label fx:id="ccuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label fx:id="ccinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Label fx:id="cseis" GridPane.columnIndex="6" GridPane.rowIndex="3">
+            <Label fx:id="L_dos" styleClass="day" GridPane.rowIndex="3" />
+            <Label fx:id="M_dos" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="X_dos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="J_dos" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="V_dos" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="S_dos" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label fx:id="D_dos" GridPane.columnIndex="6" GridPane.rowIndex="3">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />
                </styleClass></Label>
-            <Label fx:id="dcero" styleClass="day" GridPane.rowIndex="4" />
-            <Label fx:id="duno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="ddos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="dtres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label fx:id="dcuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Label fx:id="dcinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Label fx:id="dseis" GridPane.columnIndex="6" GridPane.rowIndex="4">
+            <Label fx:id="L_tres" styleClass="day" GridPane.rowIndex="4" />
+            <Label fx:id="M_tres" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="X_tres" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="J_tres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="V_tres" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="S_tres" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label fx:id="D_tres" GridPane.columnIndex="6" GridPane.rowIndex="4">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />
                </styleClass></Label>
-            <Label fx:id="ecero" styleClass="day" GridPane.rowIndex="5" />
-            <Label fx:id="euno" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="edos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label fx:id="etres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Label fx:id="ecuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Label fx:id="ecinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Label fx:id="eseis" GridPane.columnIndex="6" GridPane.rowIndex="5">
+            <Label fx:id="L_cuatro" styleClass="day" GridPane.rowIndex="5" />
+            <Label fx:id="M_cuatro" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="X_cuatro" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="J_cuatro" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="V_cuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="S_cuatro" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label fx:id="D_cuatro" GridPane.columnIndex="6" GridPane.rowIndex="5">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />
                </styleClass></Label>
-            <Label fx:id="fcero" styleClass="day" GridPane.rowIndex="6" />
-            <Label fx:id="funo" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Label fx:id="fdos" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Label fx:id="ftres" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Label fx:id="fcuatro" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Label fx:id="fcinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <Label fx:id="fseis" GridPane.columnIndex="6" GridPane.rowIndex="6">
+            <Label fx:id="L_cinco" styleClass="day" GridPane.rowIndex="6" />
+            <Label fx:id="M_cinco" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="X_cinco" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="J_cinco" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="V_cinco" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="S_cinco" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="D_cinco" GridPane.columnIndex="6" GridPane.rowIndex="6">
                <styleClass>
                   <String fx:value="day" />
                   <String fx:value="sunday" />

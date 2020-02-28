@@ -1,4 +1,4 @@
-package dad.javafx.calendar;
+package dad.javafx.calendar.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,7 +24,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.util.converter.NumberStringConverter;
 
-public class CalendarController implements Initializable {
+public class CalendarioController implements Initializable {
 
 	@FXML
 	private BorderPane root;
@@ -78,21 +78,18 @@ public class CalendarController implements Initializable {
 
 	IntegerProperty year = new SimpleIntegerProperty();
 
-	public CalendarController() throws IOException {
+	public CalendarioController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Calendar.fxml"));
 		loader.setController(this);
 		loader.load();
 	}
 
-	public BorderPane getView() {
-		return root;
-	}
-
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		root.getStylesheets().add(getClass().getResource("/css/calendar.css").toExternalForm());
-
 		year.set(Calendar.getInstance().get(Calendar.YEAR));
+		
+		//Bindings
 
 		enero.yearPropertyProperty().bind(year);
 		febrero.yearPropertyProperty().bind(year);
@@ -109,21 +106,6 @@ public class CalendarController implements Initializable {
 
 		Bindings.bindBidirectional(yearLabel.textProperty(), year, new NumberStringConverter("####"));
 
-		LocalDateTime now = LocalDateTime.now();
-		int ano = now.getYear();
-		int month = now.getMonthValue();
-		int day = now.getDayOfMonth();
-		int hour = now.getHour();
-		int minute = now.getMinute();
-
-		String info = new String("Hoy es dia " + day + " del " + month + " de " + ano + " a las " + hour + ":" + minute)
-				.toString();
-
-		Platform.runLater(() -> {
-			Notifications.create().text(info).showInformation();
-
-		});
-
 	}
 
 	@FXML
@@ -134,6 +116,10 @@ public class CalendarController implements Initializable {
 	@FXML
 	void onSiguienteAction(ActionEvent event) {
 		year.set(year.get() + 1);
+	}
+	
+	public BorderPane getView() {
+		return root;
 	}
 
 }

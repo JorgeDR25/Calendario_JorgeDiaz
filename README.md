@@ -1,7 +1,3 @@
-# Calendar ( with CSS ) 
+# Calendario Javafx 
 
-Este calendario incluye la tarea Calendar y Calendar CSS
-
-Vista previa:
-
-![picture](src/main/resources/dataforreadme/preview.png)
+Calendario con Javafx y CSS

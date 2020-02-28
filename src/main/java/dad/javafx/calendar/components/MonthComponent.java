@@ -23,144 +23,145 @@ public class MonthComponent extends BorderPane implements Initializable {
 
 	// private declarations
 
-	private Label justtoday;
+	private Label hoy;
 	private ListProperty<Label> days = new SimpleListProperty<Label>(FXCollections.observableArrayList());
 	private IntegerProperty monthProperty = new SimpleIntegerProperty();
 	private IntegerProperty yearProperty = new SimpleIntegerProperty();
 
 	// model
 
-	@FXML
-	private BorderPane root;
+		@FXML
+		private BorderPane root;
 
-	@FXML
-	private Label monthLabel;
+	    @FXML
+	    private Label mesLabel;
 
-	@FXML
-	private Label acero;
+	    @FXML
+	    private Label L_cero;
 
-	@FXML
-	private Label auno;
+	    @FXML
+	    private Label M_cero;
 
-	@FXML
-	private Label ados;
+	    @FXML
+	    private Label X_cero;
 
-	@FXML
-	private Label atres;
+	    @FXML
+	    private Label J_cero;
 
-	@FXML
-	private Label acuatro;
+	    @FXML
+	    private Label V_cero;
 
-	@FXML
-	private Label acinco;
+	    @FXML
+	    private Label S_cero;
 
-	@FXML
-	private Label aseis;
+	    @FXML
+	    private Label D_cero;
 
-	@FXML
-	private Label bcero;
+	    @FXML
+	    private Label L_uno;
 
-	@FXML
-	private Label buno;
+	    @FXML
+	    private Label M_uno;
 
-	@FXML
-	private Label bdos;
+	    @FXML
+	    private Label X_uno;
 
-	@FXML
-	private Label btres;
+	    @FXML
+	    private Label J_uno;
 
-	@FXML
-	private Label bcuatro;
+	    @FXML
+	    private Label V_uno;
 
-	@FXML
-	private Label bcinco;
+	    @FXML
+	    private Label S_uno;
 
-	@FXML
-	private Label bseis;
+	    @FXML
+	    private Label D_uno;
 
-	@FXML
-	private Label ccero;
+	    @FXML
+	    private Label L_dos;
 
-	@FXML
-	private Label cuno;
+	    @FXML
+	    private Label M_dos;
 
-	@FXML
-	private Label cdos;
+	    @FXML
+	    private Label X_dos;
 
-	@FXML
-	private Label ctres;
+	    @FXML
+	    private Label J_dos;
 
-	@FXML
-	private Label ccuatro;
+	    @FXML
+	    private Label V_dos;
 
-	@FXML
-	private Label ccinco;
+	    @FXML
+	    private Label S_dos;
 
-	@FXML
-	private Label cseis;
+	    @FXML
+	    private Label D_dos;
 
-	@FXML
-	private Label dcero;
+	    @FXML
+	    private Label L_tres;
 
-	@FXML
-	private Label duno;
+	    @FXML
+	    private Label M_tres;
 
-	@FXML
-	private Label ddos;
+	    @FXML
+	    private Label X_tres;
 
-	@FXML
-	private Label dtres;
+	    @FXML
+	    private Label J_tres;
 
-	@FXML
-	private Label dcuatro;
+	    @FXML
+	    private Label V_tres;
 
-	@FXML
-	private Label dcinco;
+	    @FXML
+	    private Label S_tres;
 
-	@FXML
-	private Label dseis;
+	    @FXML
+	    private Label D_tres;
 
-	@FXML
-	private Label ecero;
+	    @FXML
+	    private Label L_cuatro;
 
-	@FXML
-	private Label euno;
+	    @FXML
+	    private Label M_cuatro;
 
-	@FXML
-	private Label edos;
+	    @FXML
+	    private Label X_cuatro;
 
-	@FXML
-	private Label etres;
+	    @FXML
+	    private Label J_cuatro;
 
-	@FXML
-	private Label ecuatro;
+	    @FXML
+	    private Label V_cuatro;
 
-	@FXML
-	private Label ecinco;
+	    @FXML
+	    private Label S_cuatro;
 
-	@FXML
-	private Label eseis;
+	    @FXML
+	    private Label D_cuatro;
 
-	@FXML
-	private Label fcero;
+	    @FXML
+	    private Label L_cinco;
 
-	@FXML
-	private Label funo;
+	    @FXML
+	    private Label M_cinco;
 
-	@FXML
-	private Label fdos;
+	    @FXML
+	    private Label X_cinco;
 
-	@FXML
-	private Label ftres;
+	    @FXML
+	    private Label J_cinco;
 
-	@FXML
-	private Label fcuatro;
+	    @FXML
+	    private Label V_cinco;
 
-	@FXML
-	private Label fcinco;
+	    @FXML
+	    private Label S_cinco;
 
-	@FXML
-	private Label fseis;
+	    @FXML
+	    private Label D_cinco;
+
 
 	public MonthComponent() {
 		super();
@@ -178,10 +179,11 @@ public class MonthComponent extends BorderPane implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
-		days.addAll(acero, auno, ados, atres, acuatro, acinco, aseis, bcero, buno, bdos, btres, bcuatro, bcinco, bseis,
-				ccero, cuno, cdos, ctres, ccuatro, ccinco, cseis, dcero, duno, ddos, dtres, dcuatro, dcinco, dseis,
-				ecero, euno, edos, etres, ecuatro, ecinco, eseis, fcero, funo, fdos, ftres, fcuatro, fcinco, fseis);
+		
+		days.addAll(L_cero, M_cero, X_cero, J_cero, V_cero, S_cero, D_cero, L_uno, M_uno, X_uno, J_uno, V_uno, S_uno, D_uno,
+				L_dos, M_dos, X_dos, J_dos, V_dos, S_dos, D_dos, L_tres, M_tres, X_tres, J_tres, V_tres, S_tres, D_tres,
+				L_cuatro, M_cuatro, X_cuatro, J_cuatro, V_cuatro, S_cuatro, D_cuatro, L_cinco, M_cinco, X_cinco, J_cinco,
+				V_cinco, S_cinco, D_cinco);
 
 		yearProperty.addListener((o, ov, nv) -> {
 			configure();
@@ -190,17 +192,17 @@ public class MonthComponent extends BorderPane implements Initializable {
 	}
 
 	private void configure() {
-
 		GregorianCalendar aux = new GregorianCalendar(yearProperty.getValue(), monthProperty.getValue() - 1, 1);
 		YearMonth yearMonthObject = YearMonth.of(yearProperty.getValue(), monthProperty.getValue());
 		int comienzo = aux.get(Calendar.DAY_OF_WEEK) - 2;
 		if (comienzo == -1) {
 			comienzo = 6;
 		}
+		
 
 		for (int i = 0; i < days.getSize(); i++) {
 			days.get().get(i).setText("");
-			if (days.get().get(i).equals(justtoday)) {
+			if (days.get().get(i).equals(hoy)) {
 				days.get().get(i).getStyleClass().remove("today");
 			}
 		}
@@ -209,46 +211,47 @@ public class MonthComponent extends BorderPane implements Initializable {
 			if (LocalDate.now().getYear() == yearProperty.get()
 					&& LocalDate.now().getMonthValue() == monthProperty.get() && j == LocalDate.now().getDayOfMonth()) {
 				days.get().get(i).getStyleClass().add("today");
-				justtoday = days.get(i);
+				hoy = days.get(i);
 			}
 		}
 
+		
 		switch (monthProperty.getValue()) {
 		case 1:
-			monthLabel.setText("Enero");
+			mesLabel.setText("Enero");
 			break;
 		case 2:
-			monthLabel.setText("Febrero");
+			mesLabel.setText("Febrero");
 			break;
 		case 3:
-			monthLabel.setText("Marzo");
+			mesLabel.setText("Marzo");
 			break;
 		case 4:
-			monthLabel.setText("Abril");
+			mesLabel.setText("Abril");
 			break;
 		case 5:
-			monthLabel.setText("Mayo");
+			mesLabel.setText("Mayo");
 			break;
 		case 6:
-			monthLabel.setText("Junio");
+			mesLabel.setText("Junio");
 			break;
 		case 7:
-			monthLabel.setText("Julio");
+			mesLabel.setText("Julio");
 			break;
 		case 8:
-			monthLabel.setText("Agosto");
+			mesLabel.setText("Agosto");
 			break;
 		case 9:
-			monthLabel.setText("Septiembre");
+			mesLabel.setText("Septiembre");
 			break;
 		case 10:
-			monthLabel.setText("Octubre");
+			mesLabel.setText("Octubre");
 			break;
 		case 11:
-			monthLabel.setText("Noviembre");
+			mesLabel.setText("Noviembre");
 			break;
 		case 12:
-			monthLabel.setText("Diciembre");
+			mesLabel.setText("Diciembre");
 			break;
 		default:
 			break;
